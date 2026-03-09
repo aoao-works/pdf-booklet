@@ -151,3 +151,36 @@ button:disabled { background-color: #ccc !important; cursor: not-allowed; opacit
     h1 { font-size: 22px; }
     h2 { font-size: 20px; }
 }
+
+/* 言語切り替えメニューのスタイル (ここから追加) */
+.lang-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.lang-selector select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.lang-selector select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* 言語切り替えメニューのスマホ用の調整 */
+@media (max-width: 650px) {
+    .lang-selector {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px 0;
+    }
+}

@@ -30,10 +30,17 @@
 </head>
 
 <body>
+    <div class="lang-selector">
+        <select id="langSelect">
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
     <div class="main-content">
         <div class="container tool-section">
-            <h1>PDF冊子作成ツール</h1>
-            <p class="description">
+            <h1 data-i18n="app_title">PDF冊子作成ツール</h1>
+            <p class="description" data-i18n="app_desc">
                 作りたい冊子の綴じ方をクリックし、PDFファイルを選択してください<br>
                 PDFファイルが冊子形式のデータに変換され、ダウンロードが始まります
             </p>
@@ -51,7 +58,7 @@
                             <line x1="25" y1="20" x2="25" y2="80" stroke-width="5" />
                         </g>
                     </svg>
-                    <span>左綴じで作成<br><small>(横書き・英語など)</small></span>
+                    <span data-i18n="btn_left">左綴じで作成<br><small>(横書き・英語など)</small></span>
                 </button>
 
                 <button id="btnRightBind" class="bind-button">
@@ -64,16 +71,16 @@
                             <line x1="75" y1="20" x2="75" y2="80" stroke-width="5" />
                         </g>
                     </svg>
-                    <span>右綴じで作成<br><small>(縦書き・マンガなど)</small></span>
+                    <span data-i18n="btn_right">右綴じで作成<br><small>(縦書き・マンガなど)</small></span>
                 </button>
             </div>
 
-            <div id="status">ボタンをクリックしてファイルを選択してください</div>
+            <div id="status" data-i18n="status_init">ボタンをクリックしてファイルを選択してください</div>
         </div>
 
         <div class="container instruction-section">
-            <h2>PDF冊子の印刷方法</h2>
-            <p class="description">ダウンロードしたPDF冊子を印刷する手順です</p>
+            <h2 data-i18n="inst_title">PDF冊子の印刷方法</h2>
+            <p class="description" data-i18n="inst_desc">ダウンロードしたPDF冊子を印刷する手順です</p>
             <div class="steps-container">
                 <div class="step">
                     <div class="step-icon-wrapper"><span class="step-number">1</span><svg viewBox="0 0 100 100"
@@ -86,8 +93,8 @@
                                 stroke-linecap="round" />
 
                         </svg></div>
-                    <h3>印刷設定</h3>
-                    <p>プリンターの設定で「<strong>両面印刷</strong>」を選び、綴じ方を「<strong>短辺を綴じる</strong>」に設定します。</p>
+                    <h3 data-i18n="step1_title">印刷設定</h3>
+                    <p data-i18n="step1_desc">プリンターの設定で「<strong>両面印刷</strong>」を選び、綴じ方を「<strong>短辺を綴じる</strong>」に設定します。</p>
                 </div>
                 <div class="step">
                     <div class="step-icon-wrapper"><span class="step-number">2</span><svg viewBox="0 0 100 100"
@@ -103,8 +110,8 @@
                             <path d="M45 50 L50 55 L60 45" fill="none" stroke="currentColor" stroke-width="5"
                                 stroke-linecap="round" />
                         </svg></div>
-                    <h3>印刷する</h3>
-                    <p>設定を確認して印刷します。用紙はお好みのものを選択してください。</p>
+                    <h3 data-i18n="step2_title">印刷する</h3>
+                    <p data-i18n="step2_desc">設定を確認して印刷します。用紙はお好みのものを選択してください。</p>
                 </div>
                 <div class="step">
                     <div class="step-icon-wrapper"><span class="step-number">3</span><svg viewBox="0 0 100 100"
@@ -119,8 +126,8 @@
                                 stroke-linecap="round" />
                             <path d="M15 25 L45 25 L40 75 L15 75 Z" fill="currentColor" opacity="0.2" />
                         </svg></div>
-                    <h3>二つ折り</h3>
-                    <p>印刷された紙を全て重ねたまま、真ん中で半分に折ります。</p>
+                    <h3 data-i18n="step3_title">二つ折り</h3>
+                    <p data-i18n="step3_desc">印刷された紙を全て重ねたまま、真ん中で半分に折ります。</p>
                 </div>
                 <div class="step">
                     <div class="step-icon-wrapper"><span class="step-number">4</span><svg viewBox="0 0 100 100"
@@ -133,8 +140,8 @@
                                 stroke-linecap="round" />
                             <path d="M10 35 C 15 25, 35 20, 50 20" fill="currentColor" opacity="0.1" />
                         </svg></div>
-                    <h3>完成！</h3>
-                    <p>これで冊子の形になります。必要に応じて、折り目をホッチキスで留めてください。</p>
+                    <h3 data-i18n="step4_title">完成！</h3>
+                    <p data-i18n="step4_desc">これで冊子の形になります。必要に応じて、折り目をホッチキスで留めてください。</p>
                 </div>
             </div>
         </div>
